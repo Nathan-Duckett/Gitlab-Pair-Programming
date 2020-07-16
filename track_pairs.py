@@ -95,7 +95,6 @@ def count_groups(total_multi, names=[], count=[]):
     total_multi is the extracted group pairing array flattened from the repo
     """
     countedGroups = Counter([tuple(i) for i in total_multi])
-    print(countedGroups)
     for entry in countedGroups.most_common():
         # Ensure names are added to names list
         for name in entry[0]:
